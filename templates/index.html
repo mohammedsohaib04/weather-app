@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>SkyCast | Weather App</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head><body><main class="app">
+<section class="hero"><div><p class="eyebrow">LIVE WEATHER</p><h1>SkyCast</h1><p class="subtitle">Real-time weather, wherever you are.</p></div><div class="cloud">☁️</div></section>
+<form id="searchForm" class="search"><input id="cityInput" type="text" placeholder="Search any city..." autocomplete="off" required><button>Search</button></form>
+<div id="status" class="status"></div>
+<section id="weather" class="weather hidden">
+<div class="current-card"><div><p class="location" id="location"></p><p class="date" id="updated"></p><div class="temp-row"><span id="icon" class="weather-icon">☀️</span><span id="temp" class="temp"></span><span class="degree">°C</span></div><p id="description" class="description"></p></div>
+<div class="details"><div><span>Feels like</span><strong id="feels"></strong></div><div><span>Humidity</span><strong id="humidity"></strong></div><div><span>Wind</span><strong id="wind"></strong></div></div></div>
+<h2>5-Day Forecast</h2><div id="forecast" class="forecast"></div></section>
+<footer>Powered by Flask + Open-Meteo</footer></main>
+<script src="{{ url_for('static', filename='script.js') }}"></script></body></html>
