@@ -2,6 +2,10 @@
 
 A responsive real-time weather application built with **Python Flask** and the **Open-Meteo API**.
 
+## 🌐 Live Demo
+
+**[Open SkyCast Weather App](https://sky-weather-app.onrender.com/)**
+
 ## Features
 - Search any city
 - Current temperature, feels-like temperature, humidity and wind
@@ -20,4 +24,4 @@ Python, Flask, HTML5, CSS3, JavaScript, Open-Meteo Weather API
 3. Open: http://127.0.0.1:5000
 
 ## Deployment
-The included Procfile makes the project ready for Flask-compatible hosting platforms such as Render or Railway.
+Deployed with **Render** using Gunicorn.
